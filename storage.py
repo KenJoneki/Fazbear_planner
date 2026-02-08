@@ -94,13 +94,17 @@ class StorageManager:
         constraint_manager = ConstraintManager()
         
         constraint_manager.add_requirement("Traje de Asistente (Springlock)", "Técnico Nocturno")
-        constraint_manager.add_requirement("Espectáculo con Freddy", "Sistema de Audio")
-        constraint_manager.add_requirement("Espectáculo con Freddy", "Bonnie la Guitarra")
+        constraint_manager.add_requirement("Freddy Fazbear", "Chica la Pollo")
+        constraint_manager.add_requirement("Freddy Fazbear", "Bonnie la Guitarra")
+        constraint_manager.add_requirement("Cámara de Seguridad", "Guardia de Seguridad")
+        constraint_manager.add_requirement("Cámara de Seguridad", "Técnico Nocturno")
         
         
         constraint_manager.add_exclusion("Golden Freddy", "Freddy Fazbear")
         constraint_manager.add_exclusion("Traje de Asistente (Springlock)", "Cocina")
-        constraint_manager.add_exclusion("Foxy el Pirata", "Fiesta de cumpleaños")
+        constraint_manager.add_exclusion("Foxy el Pirata", "Sala de Mantenimiento")
+        constraint_manager.add_exclusion("Traje de Asistente (Springlock)", "Guardia de Seguridad")
+        constraint_manager.add_exclusion("Cocina", "Sistema de Audio")
         
         
         events = []
